@@ -1,5 +1,5 @@
 {
-  "client_id": "https://github.com/amitsng7/ema-cimd/blob/main/client.json",
+  "client_id": "https://amitsng7.github.io/ema-cimd/client.json",
   "client_name": "Slack EMA test (CIMD)",
   "redirect_uris": [
     "http://localhost:8765/callback"
