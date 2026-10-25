@@ -1,1 +1,29 @@
-
+{
+  "client_id": "https://github.com/amitsng7/ema-cimd/blob/main/client.json",
+  "client_name": "Slack EMA test (CIMD)",
+  "redirect_uris": [
+    "http://localhost:8765/callback"
+  ],
+  "grant_types": [
+    "authorization_code",
+    "refresh_token",
+    "urn:ietf:params:oauth:grant-type:token-exchange"
+  ],
+  "response_types": [
+    "code"
+  ],
+  "token_endpoint_auth_method": "private_key_jwt",
+  "token_endpoint_auth_signing_alg": "RS256",
+  "jwks": {
+    "keys": [
+      {
+        "kty": "RSA",
+        "alg": "RS256",
+        "use": "sig",
+        "kid": "4LDjXH_FDVjIZj4beob9GTH5dvtpaXLKrT3phazwC9Q",
+        "e": "AQAB",
+        "n": "2O0XPPbZaLxGH6GXtc-_IVl4vNWZAONTU5D5iHR0wjWmVXsJfu3mHksqkxvibnxzp-iEJiXP3lOcv7j6JwwSkNxQkKwULlFYrgX1yoneuGFtkjx0tUBjlPeZd23hc5KmQtSkZVXNSM2ObEFreUHSXmwuQ_vqCi5p4VfKkqlZxxU4dOzeVLCDYB95VBMpL2YcM6oPG4iRIaF-90YtkyaDEtusg1RSdXEdq16vUW7FILOiQ0DD5GJNyxh0KrBIfrBiZS-rg_sMnJE_r0eTAuNPNdnTjUP5IBlruRSxL7IFVFouqSbbp8i6zyaxgdLXJKGxdHTrhxUE7aauJfZo7iWnPw"
+      }
+    ]
+  }
+}
