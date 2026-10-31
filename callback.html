@@ -1,0 +1,11 @@
+<!doctype html><meta charset="utf-8"><title>EMA test callback</title>
+<body style="font-family:sans-serif;max-width:720px;margin:40px auto">
+<h3>Okta redirect received</h3>
+<p>Copy the code below and paste it into the terminal.</p>
+<textarea id="c" rows="3" style="width:100%" readonly></textarea>
+<p id="e" style="color:#b00"></p>
+<script>
+const q = new URLSearchParams(location.search);
+document.getElementById("c").value = q.get("code") || "";
+if (q.get("error")) document.getElementById("e").textContent = q.get("error") + ": " + (q.get("error_description") || "");
+</script>
