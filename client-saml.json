@@ -1,0 +1,19 @@
+{
+  "client_id": "https://amitsng7.github.io/ema-cimd/client-saml.json",
+  "client_name": "Slack EMA test (CIMD)",
+  "application_type": "web",
+  "redirect_uris": [
+    "https://amitsng7.github.io/ema-cimd/callback.html"
+  ],
+  "grant_types": [
+    "authorization_code",
+    "refresh_token",
+    "urn:ietf:params:oauth:grant-type:token-exchange"
+  ],
+  "response_types": [
+    "code"
+  ],
+  "token_endpoint_auth_method": "private_key_jwt",
+  "token_endpoint_auth_signing_alg": "RS256",
+  "jwks_uri": "https://amitsng7.github.io/ema-cimd/jwks.json"
+}
